@@ -1,0 +1,31 @@
+<html>
+<body>
+    {{ hi }}
+<br><br>
+    The original name is {{og_name}}, after using the title method the new name is {{ name }}
+<br><br>
+<ul>{% for name in names_list %}
+    <li>{{name}}</li>
+    {% endfor %}
+</ul> 
+<p>
+    The second name in the list is {{names_list.1}}
+</p> 
+The original names list
+    <ul>{% for name in og_names %}
+        <li>{{name}}</li>
+        {% endfor %}
+    </ul>
+  
+<p>
+    below is cars information
+</p>
+<p>
+The color of car 1 is: {{car1.color}}, the sound of car 1 is: {{car1.honk}}, car 1 has wheels: {{car1.wheels}} <br>
+the color of car 2 is: {{car2.color}}, the sound of car 2 is: {{car2.honk}}, car 2 has wheels: {{car2.wheels}}<br>
+motorcycle1 make: {{motorcycle1.make}} year: {{motorcycle1.year}} and has wheels: {{motorcycle1.wheels}}
+</p>
+
+
+</body>
+</html>
